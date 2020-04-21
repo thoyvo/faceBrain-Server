@@ -73,7 +73,6 @@ app.get('/profile/:id',(req,res)=>{
 
 app.put('/image', (req,res)=>{
     const { id } = req.body;
-    console.log('1',req.body)
     let found = false;
     data.forEach(user => {
         if (user.id === id ){
